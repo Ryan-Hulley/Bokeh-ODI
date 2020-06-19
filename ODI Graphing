@@ -1,0 +1,35 @@
+################################################################################
+############################## IMPORT LIBRARIES ################################
+
+# pandas and numpy for data manipulation
+import pandas as pd
+import numpy as np
+
+# datetime for setting up DateRangeSlider with generic values
+from datetime import date
+
+# functions from bokeh
+from bokeh.plotting import figure
+from bokeh.models import (CategoricalColorMapper, HoverTool, BoxZoomTool,
+						  ColumnDataSource, Panel,
+						  FuncTickFormatter, SingleIntervalTicker, LinearAxis,
+						  CustomJS, DatetimeTickFormatter, BasicTickFormatter,
+						  NumeralTickFormatter)
+from bokeh.models.widgets import (CheckboxGroup, Slider, RangeSlider,
+								  Tabs, CheckboxButtonGroup, Dropdown,
+								  TableColumn, DataTable, Select,
+								  DateRangeSlider, Button)
+from bokeh.layouts import column, row, WidgetBox, layout
+from bokeh.palettes import Category20_16, turbo, Colorblind
+import bokeh.colors
+from bokeh.io import output_file, show
+from bokeh.transform import factor_cmap, factor_mark
+
+from scripts.Universal import (	Create_Select_Axis, Create_Select_Legend,
+								Create_Range_Sliders, Update_Range_Sliders,
+								Create_Checkbox_Legend, Define_Plot_Parameters,
+								Update_HoverTool, Create_Legend, Make_Dataset,
+								Make_Dataset_Tolerance,
+								Create_Checkbox_HoverTool)
+
+################################################################################
